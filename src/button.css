@@ -1,0 +1,27 @@
+.container-login {
+	display:flex;
+	height:90vh;
+	justify-content:center;
+	align-items: center;
+	flex-direction:column;
+}
+
+.button {
+	border-radius:5px;
+	color:white;
+	cursor:pointer;
+	padding:1rem;
+	width:20%;
+}
+
+.button:not(:first-child){
+	margin-top:1rem;
+}
+
+.facebook {
+	background:#0a0aa7;
+}
+
+.twitter {
+	background:#03A9F4
+}
