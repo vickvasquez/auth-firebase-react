@@ -16,9 +16,14 @@ export default class extends Component {
 
 	logout() {
 
-		const user = firebase.auth().currentUser;
+		firebase.auth().signOut()
+			.then(() => {
+				console.log('Sesion cerrada')
+			})
+			.catch(err => {
+				console.log(err)
+			})
 
-		user.delete()
 	}
 
 	componentWillMount() {
